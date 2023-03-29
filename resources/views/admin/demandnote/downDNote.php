@@ -69,7 +69,7 @@
         </table>
         <div class="row footer">
             <div class="col-md-12 copy">
-                <p class="text-center"> © Copyright 2022 - Sanfinity Creative Solution Pvt. Ltd.</p>
+                <p class="text-center"> © Copyright 2022 - Inventory Management System</p>
             </div>
         </div>
     </div>
