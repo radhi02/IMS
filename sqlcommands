@@ -1,0 +1,33 @@
+TRUNCATE TABLE `ims`.`sales_order`;
+TRUNCATE TABLE `ims`.`demandnote`;
+TRUNCATE TABLE `ims`.`issuematerial`;
+TRUNCATE TABLE `ims`.`manufacture_order`;
+TRUNCATE TABLE `ims`.`purchase_materials_recieved`;
+TRUNCATE TABLE `ims`.`purchase_order`;
+TRUNCATE TABLE `ims`.`purchase_order_materials`;
+TRUNCATE TABLE `ims`.`rawmaterial_stock_activity`;
+TRUNCATE TABLE `ims`.`consumption`;
+TRUNCATE TABLE `ims`.`product_stock_activity`;
+TRUNCATE TABLE `ims`.`product_qc_activity`;
+TRUNCATE TABLE `ims`.`material_requirement`;
+TRUNCATE TABLE `ims`.`invoice_order`;
+TRUNCATE TABLE `ims`.`invoice_payment`;
+
+
+
+
+-- Remove permission and model (Module)
+TRUNCATE TABLE `ims`.`model_has_roles`;
+TRUNCATE TABLE `ims`.`model_has_permissions`;
+TRUNCATE TABLE `ims`.`role_has_permissions`;
+TRUNCATE TABLE `ims`.`permissions`;
+
+
+
+
+
+TRUNCATE TABLE `ims`.`roles`;
+
+update raw_material set code=concat(code,id);
+
+update raw_material set HSN_CODE=concat('HSN_CODE - ',id);
